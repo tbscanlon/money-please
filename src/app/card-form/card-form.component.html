@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row" role="main">
+    <div class="col-12">
+      <form #cardForm="ngForm" (ngSubmit)="onSubmit(cardForm)">
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input type="text" name="card-number" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="card-expiry">Expiry Date:</label>
+          <input type="text" name="card-expiry" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="card-cvv">CVV Number:</label>
+          <input type="text" name="card-cvv" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="card-name">Name (as it appears on the card):</label>
+          <input type="text" name="card-name" class="form-control" ngModel required>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
